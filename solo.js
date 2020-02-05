@@ -5,7 +5,7 @@ var frequencies = {"C0":   16.35,"C#0":   17.32,"Db0":   17.32,"D0":   18.35,"D#
 var notes = ["a","a#","b","c","c#","d","d#","e","f","f#","g","g#","a","a#","b","c","c#","d","d#","e","f","f#","g","g#"]
 const allNotes = Object.keys(frequencies)
 for(i in allNotes) if(allNotes[i].includes("b")) allNotes.splice(i, 1)
-var relativeMinors = {"C":"A","G":"E","D":"B","A":"F#","E":"C#","B":"G#","F#":"D#","C#":"A#","A♭":"F","E♭":"C","B♭":"G","F":"D"}
+var relativeMinors = {"C":"A","G":"E","D":"B","A":"F#","E":"C#","B":"G#","F#":"D#","C#":"A#","G#":"F","D#":"C","A#":"G","F":"D"}
 
 
 var simpleSoloLengths = [eNote, sNote, eNote]
