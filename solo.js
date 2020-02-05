@@ -1,5 +1,3 @@
-console.log("please work")
-alert("hi")
 var synth = new Tone.PolySynth({
 }).toMaster()
 
