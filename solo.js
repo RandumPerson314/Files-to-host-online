@@ -79,7 +79,7 @@ function bend(one, two, duration, when, bassNotes){
 //starting defauts:
 var bar = []
 var direction = "up"
-var key = $("#key")
+var key = $("#key").val()
 console.log(key)
 var scale = minPent(key)
 var note = scale[Math.floor(Math.random() * scale.length)].toUpperCase()
