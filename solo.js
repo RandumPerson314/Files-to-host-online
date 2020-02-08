@@ -79,11 +79,13 @@ function bend(one, two, duration, when, bassNotes){
 //starting defauts:
 var bar = []
 var direction = "up"
-var key = $("#key").val()
+var key = "a"
+if(allNotes.includes($("#key").val().toUpperCase)) key = $("#key").val()
 console.log(key)
 var scale = minPent(key)
 var note = scale[Math.floor(Math.random() * scale.length)].toUpperCase()
 var tempo = 110.0
+if(!$("#tempo").val().isNaN) tempo = parseFloat($("#tempo").val())
 
 //note lengths:
 var wNote = 240/tempo
