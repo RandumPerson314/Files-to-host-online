@@ -85,7 +85,7 @@ console.log(key)
 var scale = minPent(key)
 var note = scale[Math.floor(Math.random() * scale.length)].toUpperCase()
 var tempo = 110.0
-if(!$("#tempo").val().isNaN) tempo = parseFloat($("#tempo").val())
+if(!$("#tempo").val().isNan()) tempo = parseFloat($("#tempo").val())
 
 //note lengths:
 var wNote = 240/tempo
@@ -132,13 +132,14 @@ function decideNote(prevNote, prevDirection, currentScale){
 //bend("c4", "d4", qNote, 0, ["a2"])
 
 console.log(minPent("a"))
+play("c4", eNote, 0s)
 
 var noteLength = eNote
 
 console.log(sNote)
 console.log(decideNoteLength(eNote))
 
-for(let i = eNote; i < eNote*100;){
+for(let i = eNote*2; i < eNote*100;){
     noteLength = decideNoteLength(noteLength)
     i += noteLength
 
