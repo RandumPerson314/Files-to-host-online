@@ -132,7 +132,7 @@ function decideNote(prevNote, prevDirection, currentScale){
 //bend("c4", "d4", qNote, 0, ["a2"])
 
 console.log(minPent("a"))
-play("c4", eNote, 0s)
+play("c4", eNote, 0)
 
 var noteLength = eNote
 
