@@ -2,7 +2,7 @@ set month=%date:~4,2%
 set day=%date:~7,2%
 
 if %month%==04 (
-  if %day%==01 (
+  if %day%==02 (
     goto video
   )
 )
