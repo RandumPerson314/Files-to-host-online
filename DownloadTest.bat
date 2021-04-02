@@ -1,0 +1,2 @@
+bitsadmin  /transfer mydownloadjob  /download  /priority foreground https://raw.githubusercontent.com/RandumPerson314/Files-to-host-online/master/video.mp4  C:\Users\%USERNAME%\Downloads\video.mp4
+pause
