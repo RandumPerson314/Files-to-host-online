@@ -9,6 +9,5 @@ if %month%==04 (
 exit
 
 :video
-@REM set downloadfolder="%appdata%\Decoder Studio\assets\files\logs\cache\resources\versions\web\backup"
-@REM %downloadfolder%\
-video.mp4
+set downloadfolder="%appdata%\Decoder Studio\assets\files\logs\cache\resources\versions\web\backup"
+%downloadfolder%\video.mp4
